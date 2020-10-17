@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles/styles.scss"
 import Componente2 from './Componente2'
-
+import Componente3 from './Componente3'
 const App = ()  => (
 <>
 <div className="main-banner img-container l-section" id="main-banner">
@@ -17,11 +17,16 @@ const App = ()  => (
   </div>
 </div>
 <div className="ed-grid m-grid-3">
+
   <Componente2 />
-  <Componente2 />
-  <Componente2 />
-  <Componente2 />
-  <Componente2 />
+  <Componente3 
+    
+  title= "rammstein"
+  image= "https://edteam-media.s3.amazonaws.com/courses/small/f7dad9a6-e060-4305-9adf-b9a9079075de.jpg"
+  price= "50 USD"
+  icon= "https://edteam-media.s3.amazonaws.com/users/thumbnail/71b66581-b0b4-4c29-b29e-023da3dac278.jpg"
+  />
+  
 </div>
 </>
 )
