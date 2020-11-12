@@ -39,7 +39,7 @@ const Componente2 = () => (
         </div>
       </div>
       <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="#">Probar</a>
+        <a className="button--ghost-alert button--tiny" href="https://ed.team">Probar</a>
       </div>
     </div>
   </article>
@@ -68,7 +68,7 @@ const Componente2 = () => (
         </div>
       </div>
       <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="#">{props.price}</a>
+        <a className="button--ghost-alert button--tiny" href="https://darksiders.com">{props.price}</a>
       </div>
     </div>
   </article>

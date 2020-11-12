@@ -20,7 +20,7 @@ const Componente3 = ({name, image, principal, kills, atributo}) => (
         </div>
       </div>
       <div className="s-main-center">
-          <a className="button--ghost-alert button--tiny" href="#">{`Kills: ${kills}`}</a>
+          <a className="button--ghost-alert button--tiny" href="https://darksiders.com/">{`Kills: ${kills}`}</a>
       </div>
     </div>
   </article>
