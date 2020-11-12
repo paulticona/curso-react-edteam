@@ -1,7 +1,45 @@
+
+/*caja de importaciones*/
 import React from 'react';
 import "./styles/styles.scss"
 import Componente2 from './Componente2'
 import Componente3 from './Componente3'
+/*******************************************/
+
+//CREO UNA FUNCION DE ARRAY  para pasar los atributos de los objetos a mi 
+//componente3
+const cardsPersonajes = [
+  {
+    "name": "Guerra",
+    "image": "/img/guerra.jpg",
+    "principal": "/img/fuerza.png",
+    "atributo": "Fuerza",
+    "kills": 200
+  },
+  {
+    "name": "Muerte",
+    "image": "/img/muerte.jpg",
+    "principal": "/img/fuerza.png",
+    "atributo": "Fuerza",
+    "kills": 500
+  },
+  {
+    "name": "Furia",
+    "image": "/img/furia.jpg",
+    "principal": "/img/agilidad.png",
+    "atributo": "Agilidad",
+    "kills": 300
+  },
+  {
+    "name": "Lucha",
+    "image": "/img/lucha.jpg",
+    "principal": "/img/inteligencia.png",
+    "atributo": "Inteligencia",
+    "kills": 450
+  }
+]
+
+/*******************************************/
 const App = ()  => (
 <>
 <div className="main-banner img-container l-section" id="main-banner">
@@ -16,20 +54,25 @@ const App = ()  => (
     </div>
   </div>
 </div>
+
+
 <div className="ed-grid m-grid-3">
 
   <Componente2 />
-  <Componente3 
-    
-  title= "rammstein"
-  image= "https://edteam-media.s3.amazonaws.com/courses/small/f7dad9a6-e060-4305-9adf-b9a9079075de.jpg"
-  price= "50 USD"
-  icon= "https://edteam-media.s3.amazonaws.com/users/thumbnail/71b66581-b0b4-4c29-b29e-023da3dac278.jpg"
-  />
+
+  {/*Bueno en este componente recorreremos un array de objetos  cardsPersonaje[] */}
   
+  {cardsPersonajes.map(personaje => <Componente3 
+  name={personaje.name} 
+  image={personaje.image} 
+  principal={personaje.principal} 
+  kills={personaje.kills}
+  atributo={personaje.atributo}
+  />)}
 </div>
 </>
 )
+ 
 
 /*Reglas JSX
   1.- Toda etiqueta debe cerrarce ( />)
